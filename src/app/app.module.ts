@@ -9,6 +9,12 @@ import { PrincipalComponent } from './template/principal/principal.component';
 import { ConverterMoedasComponent } from './converter-moedas/converter-moedas.component';
 import { ConverterRealDolarComponent } from './converter-real-dolar/converter-real-dolar.component';
 import { ListarSimbolosComponent } from './listar-simbolos/listar-simbolos.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatInputModule} from "@angular/material/input";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { ListarSimbolosComponent } from './listar-simbolos/listar-simbolos.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent, TopoComponent]
